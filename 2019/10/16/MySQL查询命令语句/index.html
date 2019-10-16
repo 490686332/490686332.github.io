@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>MySQL增删改命令语句 | 来日可期.的博客</title>
+  <title>MySQL-查询（SELECT） | 来日可期.的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="命令语句增加：INSERT INTO 表名 (字段1，字段2，字段3，字段4) VALUES (值1，值2，值3，值4)； 删除：DELETE FROM 表名 WHERE 条件字段 = 值； 修改：UPDATE 表名 SET 要更新的字段 = 值 WHERE 条件字段 = 值；">
+  <meta name="description" content="命令语句查询：SELECT 字段1，字段2，字段3，字段4 FROM 表名 字段后加空格+自定义名字  会给原字段赋予名字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL增删改命令语句">
-<meta property="og:url" content="http://yoursite.com/2019/10/14/MySQL增删改命令语句/index.html">
+<meta property="og:title" content="MySQL-查询（SELECT）">
+<meta property="og:url" content="http://yoursite.com/2019/10/16/MySQL查询命令语句/index.html">
 <meta property="og:site_name" content="来日可期.的博客">
-<meta property="og:description" content="命令语句增加：INSERT INTO 表名 (字段1，字段2，字段3，字段4) VALUES (值1，值2，值3，值4)； 删除：DELETE FROM 表名 WHERE 条件字段 = 值； 修改：UPDATE 表名 SET 要更新的字段 = 值 WHERE 条件字段 = 值；">
+<meta property="og:description" content="命令语句查询：SELECT 字段1，字段2，字段3，字段4 FROM 表名 字段后加空格+自定义名字  会给原字段赋予名字">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-16T08:46:39.587Z">
+<meta property="og:updated_time" content="2019-10-16T08:46:11.609Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MySQL增删改命令语句">
-<meta name="twitter:description" content="命令语句增加：INSERT INTO 表名 (字段1，字段2，字段3，字段4) VALUES (值1，值2，值3，值4)； 删除：DELETE FROM 表名 WHERE 条件字段 = 值； 修改：UPDATE 表名 SET 要更新的字段 = 值 WHERE 条件字段 = 值；">
+<meta name="twitter:title" content="MySQL-查询（SELECT）">
+<meta name="twitter:description" content="命令语句查询：SELECT 字段1，字段2，字段3，字段4 FROM 表名 字段后加空格+自定义名字  会给原字段赋予名字">
   
     <link rel="alternative" href="/atom.xml" title="来日可期.的博客" type="application/atom+xml">
   
@@ -154,29 +154,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-MySQL增删改命令语句" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL查询命令语句" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      MySQL增删改命令语句
+      MySQL-查询（SELECT）
     </h1>
   
 
         
-        <a href="/2019/10/14/MySQL增删改命令语句/" class="archive-article-date">
-  	<time datetime="2019-10-14T07:00:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-14</time>
+        <a href="/2019/10/16/MySQL查询命令语句/" class="archive-article-date">
+  	<time datetime="2019-10-16T08:29:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="命令语句"><a href="#命令语句" class="headerlink" title="命令语句"></a>命令语句</h1><p>增加：INSERT INTO 表名 (字段1，字段2，字段3，字段4) VALUES (值1，值2，值3，值4)；</p>
-<p>删除：DELETE FROM 表名 WHERE 条件字段 = 值；</p>
-<p>修改：UPDATE 表名 SET 要更新的字段 = 值 WHERE 条件字段 = 值；</p>
+        <h1 id="命令语句"><a href="#命令语句" class="headerlink" title="命令语句"></a>命令语句</h1><p>查询：<br>SELECT 字段1，字段2，字段3，字段4 FROM 表名</p>
+<p>字段后加空格+自定义名字  会给原字段赋予名字<a id="more"></a></p>
+<p>SELECT * FROM 表名  查询表内所有信息</p>
+<p>SELECT x ，y FROM 表名 WHERE y&gt;a; 查询表内x中y&gt;a的内容并显示出x，y</p>
+<p>SELECT x ，y FROM 表名 WHERE y&lt;a; 查询表内x中y&lt;a的内容并显示出x，y</p>
+<p>SELECT x，y FROM 表名；查询表中所有人的x，y</p>
+<p>SELECT     x，y FROM 表名 LIMIT 5,5；查询所有人的x，y只显示第一页数据，每页五条，查询n页的数据=（当前页码-1）*每页条数，每页条数</p>
+<p>查询所有人x的升序  关键字ASC : SELECT * FROM 表名 ORDER BY x ASC;</p>
+<p>查询所有人x的降序  关键字DESC : SELECT * FROM 表名 ORDER BY x DESC;</p>
+<p>查询y是n个字，按x降序排列；’<strong>‘_下划线 一个字一个下划线：SELECT * FROM 表名 y LIKE ‘</strong>’ORDER BY x DESC;</p>
 
       
 
@@ -266,7 +273,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/14/MySQL增删改命令语句/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/MySQL查询命令语句/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +287,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/14/MySQL数据类型/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MySQL数据类型
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/11/hexo搭建个人博客/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo搭建个人博客</div>
+    <a href="/2019/10/16/MySQL-约束/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MySQL-约束</div>
       <i class="icon-circle-right"></i>
     </a>
   
