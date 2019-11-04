@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>创建servlet | 来日可期.的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#创建servlet1,设置工作空间编码格式    window-&amp;gt;preperences-&amp;gt;workspace-&amp;gt;utf-8 2,设置jsp文件的编码格式    window-&amp;gt;preperences-&amp;gt;jspfile-&amp;gt;utf-8 3,设置请求的编码格式    get:tomcat8.5默认就是utf-8    post:resp.setCharacterE">
+  <meta name="description" content="创建servlet步骤1.创建一个类 2.继承HttpServlet 3.重写doGet，doPost 4.编写web.xml 注意1,设置工作空间编码格式    window-&amp;gt;preperences-&amp;gt;workspace-&amp;gt;utf-8 2,设置jsp文件的编码格式    window-&amp;gt;preperences-&amp;gt;jspfile-&amp;gt;utf-8 3,设置请求的编">
 <meta property="og:type" content="article">
 <meta property="og:title" content="创建servlet">
 <meta property="og:url" content="http://yoursite.com/2019/11/04/创建servlet/index.html">
 <meta property="og:site_name" content="来日可期.的博客">
-<meta property="og:description" content="#创建servlet1,设置工作空间编码格式    window-&amp;gt;preperences-&amp;gt;workspace-&amp;gt;utf-8 2,设置jsp文件的编码格式    window-&amp;gt;preperences-&amp;gt;jspfile-&amp;gt;utf-8 3,设置请求的编码格式    get:tomcat8.5默认就是utf-8    post:resp.setCharacterE">
+<meta property="og:description" content="创建servlet步骤1.创建一个类 2.继承HttpServlet 3.重写doGet，doPost 4.编写web.xml 注意1,设置工作空间编码格式    window-&amp;gt;preperences-&amp;gt;workspace-&amp;gt;utf-8 2,设置jsp文件的编码格式    window-&amp;gt;preperences-&amp;gt;jspfile-&amp;gt;utf-8 3,设置请求的编">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-04T05:49:00.621Z">
+<meta property="og:updated_time" content="2019-11-04T05:55:11.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建servlet">
-<meta name="twitter:description" content="#创建servlet1,设置工作空间编码格式    window-&amp;gt;preperences-&amp;gt;workspace-&amp;gt;utf-8 2,设置jsp文件的编码格式    window-&amp;gt;preperences-&amp;gt;jspfile-&amp;gt;utf-8 3,设置请求的编码格式    get:tomcat8.5默认就是utf-8    post:resp.setCharacterE">
+<meta name="twitter:description" content="创建servlet步骤1.创建一个类 2.继承HttpServlet 3.重写doGet，doPost 4.编写web.xml 注意1,设置工作空间编码格式    window-&amp;gt;preperences-&amp;gt;workspace-&amp;gt;utf-8 2,设置jsp文件的编码格式    window-&amp;gt;preperences-&amp;gt;jspfile-&amp;gt;utf-8 3,设置请求的编">
   
     <link rel="alternative" href="/atom.xml" title="来日可期.的博客" type="application/atom+xml">
   
@@ -174,7 +174,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#创建servlet<br>1,设置工作空间编码格式<br>    window-&gt;preperences-&gt;workspace-&gt;utf-8</p>
+        <h1 id="创建servlet步骤"><a href="#创建servlet步骤" class="headerlink" title="创建servlet步骤"></a>创建servlet步骤</h1><p>1.创建一个类</p>
+<p>2.继承HttpServlet</p>
+<p>3.重写doGet，doPost</p>
+<p>4.编写web.xml</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>1,设置工作空间编码格式<br>    window-&gt;preperences-&gt;workspace-&gt;utf-8</p>
 <p>2,设置jsp文件的编码格式<br>    window-&gt;preperences-&gt;jspfile-&gt;utf-8</p>
 <p>3,设置请求的编码格式<br>    get:tomcat8.5默认就是utf-8<br>    post:resp.setCharacterEncoding(“utf-8”);</p>
 <p>4,设置相应的编码格式<br>     resp.setContentType(“text/html;charset=utf-8”);</p>
